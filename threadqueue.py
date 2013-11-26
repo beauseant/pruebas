@@ -25,7 +25,8 @@ class ThreadUrl(threading.Thread):
 
 			#signals to queue job is done
 			self.queue.task_done()
-
+	def testing ( self ):
+		print 'testing'
 
 
 def main( queue, hosts):
@@ -45,6 +46,8 @@ def main( queue, hosts):
 
 
 if __name__ == "__main__":
+
+	#create list of hosts:
 
 	hosts = ["http://yahoo.com", "http://google.com", "http://amazon.com",
 "http://ibm.com", "http://apple.com"]
